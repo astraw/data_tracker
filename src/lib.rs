@@ -13,10 +13,10 @@
 //!
 //! The principle of operation is that
 //! [`DataTracker::as_tracked_mut()`](./struct.DataTracker.html#method.as_tracked_mut)
-//! returns a mutable [`Modifier`](./struct.Modifier.html).
-//! `Modifier` has two key properties:
+//! returns a mutable [`Modifier`](./struct.Modifier.html). `Modifier` is a RAII
+//! scoped guard with two key properties:
 //!
-//! - It implements the `DerefMut` trait and allows ergonomic access to the
+//! - It implements the `DerefMut` trait to allow ergonomic access to the
 //! underlying data.
 //! - It implements the `Drop` trait which checks if the underlying
 //! data was changed and, if so, notifies the listeners.
