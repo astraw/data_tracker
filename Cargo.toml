@@ -1,0 +1,17 @@
+[package]
+name = "data_tracker"
+description = "tracks changes to data and notifies listeners"
+version = "0.1.0"
+authors = ["Andrew Straw <strawman@astraw.com>"]
+license = "MIT/Apache-2.0"
+homepage = "https://github.com/astraw/data_tracker"
+repository = "https://github.com/astraw/data_tracker"
+keywords = ["change", "notify", "track", "functional", "redux", "reactive", "watch"]
+readme = "README.md"
+
+[dependencies]
+
+[features]
+default = []
+
+no_send = []
